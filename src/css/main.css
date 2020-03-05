@@ -1,0 +1,182 @@
+/* Styles for #top (hero image section) */
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+}
+
+#page {
+    position: relative;
+}
+
+/*Welcome section and corresponding image*/
+#welcome {
+    width: 100%;
+    height: 80vh;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+img#heroImage {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header#mobileHeader {
+    width: 100%;
+    height: 6vh;
+    z-index: 999;
+    position: fixed;
+    background-color: white;
+    font-family: 'Spartan';
+    top: 0;
+}
+
+#coverTextContainer {
+    height: 80vh;
+    width: 100%;
+    text-align: center;
+}
+
+#coverTextContainer h2 {
+    padding-top: 40vh;
+    color: white;
+    font-size: 3rem;
+    margin: 0;
+}
+
+#tagLineContainer {
+    display: flex;
+    height: 20vh;
+    font-family: 'Spartan';
+    text-align: center;
+}
+
+#tagLineContainer h2 {
+    font-size: 2rem;
+    margin: auto;
+}
+
+h2.sectionHeader {
+    text-align: center;
+    font-family: 'Open Sans';
+    margin: 0;
+    padding-top: 6.5vh;
+    text-decoration-line: underline;
+    font-size: 3rem;
+}
+
+section {
+    max-width: 95%;
+    margin: auto;
+}
+
+article {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#freshnessTextContainer, #tasteTextContainer {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+#freshnessImageContainer, #tasteImageContainer {
+    display: flex;
+    width: 100%;
+    height: 23vh;
+    margin: 2vh 0 2vh 0;
+}
+
+#freshnessImageContainer {
+    margin: 4vh 0 2vh 0;
+}
+
+#freshnessImage, #tasteImage {
+    width: 23vh;
+    height: 100%;
+    border-radius: 50%;
+    border: black 2px;
+    background-color: red;
+    margin: auto;
+}
+
+ul.specialtiesList li::before {
+    content: '\25CF';
+    color: green;
+    font-size: 2rem;
+    margin: 5px;
+}
+
+ul.specialtiesList li {
+    margin-bottom: 1vh;
+}
+
+.specialtiesList {
+    list-style: none;
+}
+
+#specialties hr {
+    margin: 1.5vh 0 1.5vh 0;
+}
+
+.imageDescription {
+    font-size: 1.6rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.serveIconHolder {
+    display: inline-block;
+    margin: auto;
+    width: 100%;
+}
+
+.serveIconCircle{
+    display: flex;
+    height: 13vh;
+    width:  13vh;
+    background-color: #215650;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -6.5vh;
+}
+
+.serveIconSvg {
+    height: 9.75vh;
+    width: 9.75vh;
+    margin: auto;
+    padding-bottom: 10%;
+}
+
+.serveText {
+    text-align: center;
+    padding: 1rem 0 1rem 0;
+    font-size: 2.7rem;
+    font-family: 'Rubik';
+    font-weight: 700;
+    clear: left;
+}
+
+.serveIconCard {
+    margin: 6.5vh 0 10vh 0;
+    background-image: linear-gradient(to right, #563a21, #6c4929);
+    box-shadow: -.5rem .5rem .5rem 0rem rgba(184,167,184,1);
+}
+
+section.weServe h2.sectionHeader {
+    margin-bottom: 10.5vh;
+}
